@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Shoppers Stop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-sm " >
+        <div class="container-fluid justify-content-center " style="height: 4rem;">
+            <a class="navbar-brand" > Shoppers Stop</a>
+            <form class="d-flex" role="search" id="search">
+                <input class="form-control me-3" style="width:400px" type="search" placeholder="Search" aria-label="search ">
+                <button class="btn btn-outline-success" type="submit"> Search</button>
+            </form>
+            <ul class="navbar-nav align-items-center ">
+                
+                <li class="nav-item"><a class="nav-link">Home</a></li>
+                <li><a href="#Men's-Wear"></a></li>
+                <li><a href="#Women's-Wear"></a></li>
+                <li><a href="#Kid's-Wear"></a></li>
+               <!-- Button to trigger the modal -->
+
+               
+         
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="Mens-Wear">Men's Wear</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="https://www.myntra.com/men-tshirts" id="Uppers">Uppers</a></li>
+                        <li><a class="dropdown-item" href="https://www.myntra.com/men-casual-trousers" id="Lowers">Lowers</a></li>
+                        <li><a class="dropdown-item" href="https://www.myntra.com/mens-shorts" id="Shorts">Shorts</a></li>
+                        <li><a class="dropdown-item" href="https://www.myntra.com/men-sports-shoes" id="footwear1">footwear</a>
+                        
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="Womens Wear">Women's Wear</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="https://www.myntra.com/dresses?f=Gender%3Amen%20women%2Cwomen"id="Indian Wear">Indian Wear</a></li>
+                        <li><a class="dropdown-item" href="https://www.myntra.com/women-kurtas-kurtis-suits" id="Western Wear">Indian Wear</a></li>
+                        <li><a class="dropdown-item" href="https://www.myntra.com/women-sports-shoes" id="Footwear2">Footwear</a></li>
+                        <li><a class="dropdown-item" href="https://www.myntra.com/skin-care?f=gender%3Amen%20women%2Cwomen" id="Cosmetics">Cosmetics</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="Kid's Wear">Kid's Wear</a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="https://www.myntra.com/kids?f=Categories%3ATshirts%3A%3AGender%3Aboys%2Cboys%20girls&plaEnabled=false" id="Boys Collection">Boys Collection</a></li>
+                    <li><a class="dropdown-item" href="https://www.myntra.com/kids?f=Categories%3ADresses%3A%3AGender%3Aboys%20girls%2Cgirls&plaEnabled=false"id="Girls Collection">Girls Collection</a></li>
+                    
+                       </ul>  
+                    </li>
+
+                    <!-- Button to trigger the modal -->
+<button type="button" class="btn btn-primary" id="logButton" data-bs-toggle="modal" data-bs-target="#loginModal">
+  Login
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="loginForm">
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" name="password" required>
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="rememberMe" name="rememberMe">
+            <label class="form-check-label" for="rememberMe">Remember me</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <p>Don't have an account? <a href="#">Sign up</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+                    <div class="container " style="margin-left:70px" id="icon-container">
+                        <div class="row" id="rowOne" style="margin: 0;">
+                            <div class="col my-2" style="cursor: pointer;">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="col  my-2 " style="cursor: pointer;">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="col  my-2 " style="cursor: pointer;">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </div>
+                            
+                        </div>
+                   
+                    </div>
+              
+                   </div>
+              </ul>
+          </div>
+      </nav>
+<!----------------------------------------------CAROUSEL--------------------------------->
+<!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+     
+    </div>
+  
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active" id="sale1">
+        <a href="https://www.ajio.com/s/min-50-percent-off-5530-59722">
+        <img src="assets/images.jpeg" alt="Los Angeles" class="d-block w-100">
+        </a>
+      </div>
+      <div class="carousel-item" id="sale2">
+        <a href="https://www.ajio.com/s/min-50-percent-off-5530-59723" >
+        <img src="https://assets.indiadesire.com/images/ajio%20big%20bold%20sale%202023%20june.jpg" alt="Chicago" class="d-block  w-100">
+        </a>
+      </div>
+      <div class="carousel-item" id="sale3">
+        <a href="https://www.ajio.com/s/min-60-percent-off-5530-59723">
+        <img src="https://assets.ajio.com/medias/sys_master/images/images/h8c/h08/47085983858718/04022022-M-ajiomania-prebuzz-topbanner-5090.jpg" alt="New York" class="d-block w-100">
+        </a>
+      </div>
+      <div class="carousel-item" id="sale4">
+        <a href="https://www.ajio.com/s/min-30-percent-off-5530-59721">
+        <img src="assets/1713372380077.png" alt="New York" class="d-block w-100">
+        </a>
+      </div>    
+    </div>
+  
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+
+<!--------------------------Men's KURTA cards -->
+  <div id="Kurta-con">
+    <p id="kurta">Get exiting offers on Men's Ethenic Wear</p>
+ 
+  <div class="row">
+    <div class="col-md-2">
+    <div class="card" style="width:18rem">
+      <div class="card-body">
+        <a href="https://www.ajio.com/sojanya-printed-mandarin-collar-kurta/p/466439372_maroon">
+        <img src="assets/grey-cotton-mens-kurta-pajama-nmk-6148.jpg" class="card-img-top" alt="">
+        </a>
+        <div class="card-footer"><b>MIRAAN</b></footer></div>
+        <p class="card-text">Printed Straight Kurta</p>
+        <span><b>₹1889</b></span>
+        <s>₹2000</s><span class="perDiscount">(20%OFF)</span>
+        </div>
+      </div>
+    </div>
+
+  
+
+ <div class="col-md-2">
+  <div class="card" style="width:18rem">
+    <div class="card-body">
+      <a href="https://www.ajio.com/fabindia-men-striped-regular-fit-long-kurta-with-mandarin-collar/p/700139510_white">
+      <img src="assets/kurta4" class="card-img-top" alt="">
+      </a>
+      <div class="card-footer"><b>MIRAAN</b></footer></div>
+      <p class="card-text">Embroided Cotton Silk Kurta Kurta</p>
+      <span><b>₹2200</b></span>
+      <s>₹3000</s><span class="perDiscount">(25%OFF)</span>
+    </div>
+  </div>
+  </div>
+
+
+<div class="col-md-2">
+<div class="card" style="width:18rem">
+  <div class="card-body">
+    <a href="https://www.ajio.com/vivera-men-regular-fit-kurta-with-band-collar-/p/700199694_turquoise">
+    <img src="assets/kurta.jpeg" class="card-img-top" alt="">
+    </a>
+    <div class="card-footer"><b>SOJANYA</b></footer></div>
+    <p class="card-text">Embroided STraight kurta</p>
+    <span><b>₹2589</b></span>
+        <s>₹4000</s><span class="perDiscount">(33%OFF)</span>
+  </div>
+</div>
+</div> 
+
+<div class="col-md-2">
+<div class="card" style="width:18rem">
+  <div class="card-body">
+    <a href="https://www.ajio.com/vivera-men-regular-fit-kurta-with-band-collar-/p/700199694_turquoise">
+    <img src="assets/kurta5" class="card-img-top" alt="">
+    </a>
+    <div class="card-footer"><b>Ode by House of Pataudi</b></footer></div>
+    <p class="card-text">Embroided Straight kurta</p>
+    <span><b>₹1889</b></span>
+        <s>₹2000</s><span class="perDiscount">(20%OFF)</span>
+  </div>
+</div>
+</div> 
+
+<div class="col-md-2">
+  <div class="card" style="width:18rem">
+    <div class="card-body">
+      <a href="https://www.ajio.com/jompers-embellished-long-kurta/p/466454740_yellow">
+      <img src="assets/kurta6" class="card-img-top" alt="">
+      </a>
+      <div class="card-footer"><b>HERE&NOW</b></footer></div>
+      <p class="card-text">Men's kurta</p>
+      <span><b>₹2999</b></span>
+      <s>₹4599</s><span class="perDiscount">(38%OFF)</span>
+    </div>
+  </div>
+  </div> 
+</div>
+
+<div class="row">
+  <div class="col-md-2">
+    <div class="card" style="width:18rem">
+      <div class="card-body">
+        <a href="https://www.ajio.com/vivera-men-regular-fit-kurta-with-band-collar-/p/700199694_turquoise">
+        <img src=" assets/kurta3"class="card-img-top" alt="">
+        </a>
+        <div class="card-footer"><b>Ode by House of Pataudi</b></footer></div>
+        <p class="card-text">Men's kurta</p>
+        <span><b>₹2599</b></span>
+        <s>₹4099</s><span class="perDiscount">(38%OFF)</span>
+      </div>
+    </div>
+    </div> 
+
+    <div class="col-md-2">
+      <div class="card" style="width:18rem">
+        <div class="card-body">
+          <a href="https://www.ajio.com/jompers-embellished-long-kurta/p/466454740_yellow">
+          <img src="assets/kurta6" class="card-img-top" alt="">
+          </a>
+          <div class="card-footer"><b>SOJANYA</b></footer></div>
+          <p class="card-text">Embroided Straight kurta</p>
+          <span><b>₹1500</b></span>
+        <s>₹3100</s><span class="perDiscount">(51%OFF)</span>
+        </div>
+      </div>
+      </div> 
+
+      <div class="col-md-2">
+        <div class="card" style="width:18rem">
+          <div class="card-body">
+            <a href="https://www.ajio.com/vivera-men-regular-fit-kurta-with-band-collar-/p/700199694_turquoise">
+            <img src="assets/Kurta8" class="card-img-top" alt="">
+            </a>
+            <div class="card-footer"><b>Jompers</b></footer></div>
+            <p class="card-text">Embroided Staight kurta</p>
+            <span><b>₹1599</b></span>
+            <s>₹3100</s><span class="perDiscount">(48%OFF)</span>
+          </div>
+        </div>
+        </div> 
+
+        <div class="col-md-2">
+          <div class="card" style="width:18rem">
+            <div class="card-body">
+              <a href="https://www.ajio.com/sojanya-men-embroidered-regular-fit-long-kurta/p/467127268_green">
+              <img src="assets/Kurta9" class="card-img-top" alt="">
+              </a>
+              <div class="card-footer"><b>Jompers</b></footer></div>
+              <p class="card-text">Men's Floral Embroided kurta</p>
+              <span><b>₹2199</b></span>
+              <s>₹4220</s><span class="perDiscount">(49%OFF)</span>
+            </div>
+          </div>
+          </div> 
+
+          <div class="col-md-2">
+            <div class="card" style="width:18rem">
+              <div class="card-body">
+                <a href="https://www.ajio.com/fabindia-geometric-print-slim-fit-long-kurta/p/464563018_blue">
+                <img src="assets/Kurta10" class="card-img-top" alt="">
+                </a>
+                <div class="card-footer"><b>SOJANYA</b></footer></div>
+                <p class="card-text">Men's Ethnic Motifs Cotton Kurta</p>
+                <span><b>₹3099</b></span>
+                <s>₹4220</s><span class="perDiscount">(34%OFF)</span>
+              </div>
+            </div>
+            </div> 
+</div>
+</div>
+
+
+
+<!----------------------------------------------CAROUSEL--------------------------------->
+<!-- Carousel -->
+<div id="demo2"  class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo2" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo2" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#emo2" data-bs-slide-to="2"></button>
+    <button type="button" data-bs-target="#demo2" data-bs-slide-to="3"></button>
+   
+  </div>
+
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active" id="sale1">
+      <a href="https://www.ajio.com/s/min-50-percent-off-5530-59722">
+      <img src="assets/shoes-sale1.webp" alt="Los Angeles" class="d-block w-100">
+      </a>
+    </div>
+    <div class="carousel-item" id="sale2">
+      <a href="https://www.ajio.com/s/min-50-percent-off-5530-59723" >
+      <img src="assets/carouoselSale2.jpg" alt="Chicago" class="d-block  w-100">
+      </a>
+    </div>
+    <div class="carousel-item" id="sale3">
+      <a href="https://www.ajio.com/s/min-60-percent-off-5530-59723">
+      <img src="assets/carouselSale3.avif" alt="New York" class="d-block w-100">
+      </a>
+    </div>
+    <div class="carousel-item" id="sale4">
+      <a href="https://www.ajio.com/s/min-30-percent-off-5530-59721">
+      <img src="assets/shoes-sale4'.webp" alt="New York" class="d-block w-100">
+      </a>
+    </div>    
+  </div>
+
+  <!-- Left and right controls/icons -->
+  <div class="d-flex flex-coloumn justify-content-center">
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo2" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo2" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+  </div>
+
+  <!-- --------------------------------BELOW CARDS ------------------------------>  
+         
+        <div class="container-fluid d:flex justify-content-center align-items-center"style="padding:0px" id="season--sale">
+          <div class="endSale"><h3 class="Season-Sale">END OF THE SEASON SALE</h3></div>
+          <div class="row" style="padding:0px">
+            <div class="col-md-2" id="kids-wear">
+              <div class="relative h-[400px] w-[300px] rounded-md">
+                <a href="https://www.ajio.com/s/22uhpfw-kurta-and-kurti-starting-499-5495-36311">
+                  <img
+                    src="assets/kids wear.png"
+                    alt="Kids Wear"
+                    class="z-0 h-full w-full rounded-md object-cover"
+                  />
+                </a>
+                <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
+                <div class="absolute bottom-4 left-4 text-left">
+                  <h1 class="text-lg font-semibold text-white"></h1>
+                  <p class="mt-2 text-sm text-gray-300">
+                    Kid's Outfits starting at <br><b>just ₹899</b>
+                  </p>
+                  <button class="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-white">
+                    Shop Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2"id=trousers>
+              <div class="relative h-[400px] w-[300px] rounded-md">
+                <a href="https://www.ajio.com/s/22uhpfw-kurta-and-kurti-starting-499-5495-36311">
+                  <img
+                    src="assets/trousers.png"
+                    alt="Trousers"
+                    class="z-0 h-full w-full rounded-md object-cover"
+                  />
+                </a>
+                <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
+                <div class="absolute bottom-4 left-4 text-left">
+                  <h1 class="text-lg font-semibold text-white"></h1>
+                  <p class="mt-2 text-sm text-gray-300">
+                    Trousers starting at <br><b>just ₹899</b>
+                  </p>
+                  <button class="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-white">
+                    Shop Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2" id="sunglasses">
+              <div class="relative h-[400px] w-[300px] rounded-md">
+                <a href="https://www.ajio.com/s/22uhpfw-kurta-and-kurti-starting-499-5495-36311">
+                  <img
+                    src="assets/sunglasses.png"
+                    alt="Traditional Wear"
+                    class="z-0 h-full w-full rounded-md object-cover"
+                  />
+                </a>
+                <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
+                <div class="absolute bottom-4 left-4 text-left">
+                  <h1 class="text-lg font-semibold text-white"></h1>
+                  <p class="mt-2 text-sm text-gray-300">
+                    Unisex Sunglasses starting at <br><b>just ₹299</b>
+                  </p>
+                  <button class="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-white">
+                    Shop Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2"id="t-shirt">
+              <div class="relative h-[400px] w-[300px] rounded-md">
+                <a href="https://www.ajio.com/s/22uhpfw-kurta-and-kurti-starting-499-5495-36311">
+                  <img
+                    src="assets/t shirt.png"
+                    alt="T shirt"
+                    class="z-0 h-full w-full rounded-md object-cover"
+                  />
+                </a>
+                <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
+                <div class="absolute bottom-4 left-4 text-left">
+                  <h1 class="text-lg font-semibold text-white"></h1>
+                  <p class="mt-2 text-sm text-gray-300">
+                    T-shirt starting at <br><b>just ₹699</b>
+                  </p>
+                  <button class="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-white">
+                    Shop Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2" id="women-tops">
+              <div class="relative h-[400px] w-[300px] rounded-md">
+                <a href="https://www.ajio.com/s/22uhpfw-kurta-and-kurti-starting-499-5495-36311">
+                  <img
+                    src="assets/Women tops.jpg"
+                    alt="Women Tops"
+                    class="z-0 h-full w-full rounded-md object-cover"
+                  />
+                </a>
+                <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
+                <div class="absolute bottom-4 left-4 text-left">
+                  <h1 class="text-lg font-semibold text-white"></h1>
+                  <p class="mt-2 text-sm text-gray-300">
+                    Women's Top starting at <br><b>just ₹899</b>
+                  </p>
+                  <button class="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-white">
+                    Shop Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+       <!-- --------------------EXCLUSIVE----------- -->
+ 
+       <div class="container-fluid" style="padding:0px" id="exclusive" >
+  <div class="endExclusive"><h2 class="Exclusive">Shopper Stop's Exclusive</h2></div>
+
+  <div class="row" style="padding:0px">
+    <div class="col-md-2" id="kids-wear">
+      <div class="relative h-[400px] w-[300px] rounded-md">
+        <a href="https://www.ajio.com/s/22uhpfw-kurta-and-kurti-starting-499-5495-36311">
+          <img
+            src="assets/chelsibBoots.jpg"
+            alt="chelsea boots"
+            class="z-0 h-full w-full rounded-md object-cover"
+          />
+        </a>
+        <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
+        <div class="absolute bottom-4 left-4 text-left">
+          <h1 class="text-lg font-semibold text-white"></h1>
+          <p class="mt-2 text-sm text-gray-300">
+            Chelsea Boots starting at  <br><b>just ₹1299</b>
+          </p>
+          <button class="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-white">
+            Shop Now
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2"id=trousers>
+      <div class="relative h-[400px] w-[300px] rounded-md">
+        <a href="https://www.ajio.com/s/22uhpfw-kurta-and-kurti-starting-499-5495-36311">
+          <img
+            src="assets/flipFlops.png"
+            alt="Trousers"
+            class="z-0 h-full w-full rounded-md object-cover"
+          />
+        </a>
+        <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
+        <div class="absolute bottom-4 left-4 text-left">
+          <h1 class="text-lg font-semibold text-white"></h1>
+          <p class="mt-2 text-sm text-gray-300">
+            FLIP Flops starting  at <br><b>just ₹799</b>
+          </p>
+          <button class="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-white">
+            Shop Now
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2" id="sunglasses">
+      <div class="relative h-[400px] w-[300px] rounded-md">
+        <a href="https://www.ajio.com/s/22uhpfw-kurta-and-kurti-starting-499-5495-36311">
+          <img
+            src="assets/nike.png"
+            alt="Nike shoes"
+            class="z-0 h-full w-full rounded-md object-cover"
+          />
+        </a>
+        <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
+        <div class="absolute bottom-4 left-4 text-left">
+          <h1 class="text-lg font-semibold text-white"></h1>
+          <p class="mt-2 text-sm text-gray-300">
+           Nike Shoes starting at <br><b>just ₹1899</b>
+          </p>
+          <button class="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-white">
+            Shop Now
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2"id="t-shirt">
+      <div class="relative h-[400px] w-[300px] rounded-md">
+        <a href="https://www.ajio.com/s/22uhpfw-kurta-and-kurti-starting-499-5495-36311">
+          <img
+            src="assets/adidas.png"
+            alt="adidas"
+            class="z-0 h-full w-full rounded-md object-cover"
+          />
+        </a>
+        <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
+        <div class="absolute bottom-4 left-4 text-left">
+          <h1 class="text-lg font-semibold text-white"></h1>
+          <p class="mt-2 text-sm text-gray-300">
+            Adidas Shoes starting at <br><b>just ₹2999</b>
+          </p>
+          <button class="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-white">
+            Shop Now
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2" id="women-tops">
+      <div class="relative h-[400px] w-[300px] rounded-md">
+        <a href="https://www.ajio.com/s/22uhpfw-kurta-and-kurti-starting-499-5495-36311">
+          <img
+            src="assets/puma.jpg"
+            alt="puma"
+            class="z-0 h-full w-full rounded-md object-cover"
+          />
+        </a>
+        <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
+        <div class="absolute bottom-4 left-4 text-left">
+          <h1 class="text-lg font-semibold text-white"></h1>
+          <p class="mt-2 text-sm text-gray-300">
+            Puma Shoes starting at <br><b>just ₹1299</b>
+          </p>
+          <button class="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-white">
+            Shop Now
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!----------------------------------FOOTER------------------->
+<div id="footer" style="margin-top:10rem; border-top: 1px solid #000; border-bottom: none;">
+<section class="relative overflow-hidden py-10">
+  <div class="relative z-10 mx-auto max-w-7xl px-4">
+    <div class="-m-6 flex flex-wrap">
+      <div class="w-full p-6 md:w-1/2 lg:w-5/12">
+        <div class="flex h-full flex-col justify-between">
+          <div class="mb-4 inline-flex items-center">
+            <svg
+              width="40"
+              height="46"
+              viewBox="0 0 50 56"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M23.2732 0.2528C20.8078 1.18964 2.12023 12.2346 1.08477 13.3686C0 14.552 0 14.7493 0 27.7665C0 39.6496 0.0986153 41.1289 0.83823 42.0164C2.12023 43.5449 23.2239 55.4774 24.6538 55.5267C25.9358 55.576 46.1027 44.3832 48.2229 42.4602C49.3077 41.474 49.3077 41.3261 49.3077 27.8158C49.3077 14.3055 49.3077 14.1576 48.2229 13.1714C46.6451 11.7415 27.1192 0.450027 25.64 0.104874C24.9497 -0.0923538 23.9142 0.00625992 23.2732 0.2528ZM20.2161 21.8989C20.2161 22.4906 18.9835 23.8219 17.0111 25.3997C15.2361 26.7803 13.8061 27.9637 13.8061 28.0623C13.8061 28.1116 15.2361 29.0978 16.9618 30.2319C18.6876 31.3659 20.2655 32.6479 20.4134 33.0917C20.8078 34.0286 19.871 35.2119 18.8355 35.2119C17.8001 35.2119 9.0233 29.3936 8.67815 28.5061C8.333 27.6186 9.36846 26.5338 14.3485 22.885C17.6521 20.4196 18.4904 20.0252 19.2793 20.4196C19.7724 20.7155 20.2161 21.3565 20.2161 21.8989ZM25.6893 27.6679C23.4211 34.9161 23.0267 35.7543 22.1391 34.8668C21.7447 34.4723 22.1391 32.6479 23.6677 27.9637C26.2317 20.321 26.5275 19.6307 27.2671 20.3703C27.6123 20.7155 27.1685 22.7864 25.6893 27.6679ZM36.0932 23.2302C40.6788 26.2379 41.3198 27.0269 40.3337 28.1609C39.1503 29.5909 31.6555 35.2119 30.9159 35.2119C29.9298 35.2119 28.9436 33.8806 29.2394 33.0424C29.3874 32.6479 30.9652 31.218 32.7403 29.8867L35.9946 27.4706L32.5431 25.1532C30.6201 23.9205 29.0915 22.7371 29.0915 22.5892C29.0915 21.7509 30.2256 20.4196 30.9159 20.4196C31.3597 20.4196 33.6771 21.7016 36.0932 23.2302Z"
+                fill="black"
+              ></path>
+            </svg>
+            <span class="ml-4 text-lg font-bold">SHOPPERS STOP</span>
+          </div>
+          <div>
+            <p class="mb-4  text-base font-medium">
+              Shop with ease, delivered with love..........
+            </p>
+            <p class="text-sm text-gray-600">
+              © Copyright 2024. All Rights Reserved by SHOPPERS STOP.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="w-full p-6 md:w-1/2 lg:w-2/12">
+        <div class="h-full">
+          <h3 class="tracking-px mb-9  text-xs font-semibold uppercase text-gray-500">
+            Company
+          </h3>
+          <ul>
+            <li class="mb-4">
+              <a
+                class=" text-base font-medium text-gray-900 hover:text-gray-700"
+                href="#"
+              >
+                Features
+              </a>
+            </li>
+            <li class="mb-4">
+              <a
+                class=" text-base font-medium text-gray-900 hover:text-gray-700"
+                href="#"
+              >
+                Pricing
+              </a>
+            </li>
+            <li class="mb-4">
+              <a
+                class=" text-base font-medium text-gray-900 hover:text-gray-700"
+                href="#"
+              >
+                Affiliate Program
+              </a>
+            </li>
+            <li>
+              <a
+                class=" text-base font-medium text-gray-900 hover:text-gray-700"
+                href="#"
+              >
+                Press Kit
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="w-full p-6 md:w-1/2 lg:w-2/12">
+        <div class="h-full">
+          <h3 class="tracking-px mb-9  text-xs font-semibold uppercase text-gray-500">
+            Support
+          </h3>
+          <ul>
+            <li class="mb-4">
+              <a
+                class=" text-base font-medium text-gray-900 hover:text-gray-700"
+                href="#"
+              >
+                Account
+              </a>
+            </li>
+            <li class="mb-4">
+              <a
+                class=" text-base font-medium text-gray-900 hover:text-gray-700"
+                href="#"
+              >
+                Help
+              </a>
+            </li>
+            <li class="mb-4">
+              <a
+                class=" text-base font-medium text-gray-900 hover:text-gray-700"
+                href="#"
+              >
+                Contact Us
+              </a>
+            </li>
+            <li>
+              <a
+                class=" text-base font-medium text-gray-900 hover:text-gray-700"
+                href="#"
+              >
+                Customer Support
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="w-full p-6 md:w-1/2 lg:w-3/12">
+        <div class="h-full">
+          <h3 class="tracking-px mb-9  text-xs font-semibold uppercase text-gray-500">
+            Legals
+          </h3>
+          <ul>
+            <li class="mb-4">
+              <a
+                class=" text-base font-medium text-gray-900 hover:text-gray-700"
+                href="#"
+              >
+                Terms &amp; Conditions
+              </a>
+            </li>
+            <li class="mb-4">
+              <a
+                class=" text-base font-medium text-gray-900 hover:text-gray-700"
+                href="#"
+              >
+                Privacy Policy
+              </a>
+            </li>
+            <li>
+              <a
+                class=" text-base font-medium text-gray-900 hover:text-gray-700"
+                href="#"
+              >
+                Licensing
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+      
+
+
+
+<script src="shop.js"></script>
+</body>
+</html>

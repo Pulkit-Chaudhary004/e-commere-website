@@ -1,0 +1,248 @@
+body{
+    background-color:rgb(253, 255, 213);
+}
+/* #container-fluid{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    
+} */
+.navbar{
+    padding:0rem;
+    margin-top:2rem;
+    background-color:rgba(205, 237, 237, 0.346);
+    box-shadow: 0 0 10px rgb(51, 42, 30);
+    border-radius:1rem;
+   
+}
+/* Add some basic styling to the modal */
+#logButton{
+    height:2.5rem;
+
+}
+.modal-content {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .modal-header {
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .modal-footer {
+    background-color: #f0f0f0;
+    border-top: 1px solid #ddd;
+  }
+
+
+
+
+.filters{
+    position:relative;
+}
+#apply-filters{
+    display:flex;
+    align-items:start;
+    justify-content:end;
+    margin-right:10px;
+}
+.mens-jacket-heading{
+    display:flex;
+    align-items:start;
+    justify-content:center;
+}
+
+#demo{
+    height:850px;
+    padding:30px;
+}
+
+#demo2{
+    height:850px;
+    padding:30px;
+}
+.carousel-inner{
+    margin-top:20px;
+    height:770px;
+    object-fit:fill;
+    border-radius:2rem;
+    border-style:outset;
+    transition:all 0.3s ease-in-out;
+}
+.carousel-inner:hover{
+ transform:scale(1.02);
+ box-shadow:0 0 10px rgba(0,0,0,0.2);
+ border-radius:2rem;
+}
+.row{
+    display:flex;
+    justify-content:center;
+
+}
+.card{
+display:flex;
+flex-direction:column;
+height:100%;
+}
+#Kurta-con{
+    padding:2rem;
+}
+#kurta {
+    font-size: 50px;
+    color: #181818;
+    font-weight: bold;
+    margin-left: 25px;
+    border-width: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(236, 226, 86, 0.2);
+    display: flex;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  #kurta:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Increase box-shadow size on hover */
+  }
+  .row{
+    margin-top:2rem;
+  }
+  .card{
+    color: #f00909;
+    margin-left: 25px;
+    border-width: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgb(51, 53, 51);
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+  }
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgb(51, 53, 51)
+}
+.card{
+    color: #333;
+    margin-left: 25px;
+    border-width: 10px;
+    cursor: pointer;
+    border:20px;
+    border:outset;
+    border-color:rgb(255, 255, 255);
+    box-shadow: 0 0 15px rgb(51, 53, 51);
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+
+}
+.card2:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgb(51, 53, 51)
+}
+
+/* image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+
+  /* .banner-overlay {
+    position: absolute;
+    top: 10rem;
+    left: 5rem;
+    background-color: #fff;
+    padding: 0px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(51, 22, 22, 0.2);
+    font-size:0px;
+  }  */
+ .Season-Sale{
+    font-size: 3rem;
+    color: #333;
+    margin-top:2rem;
+    margin-right: 5rem ;
+    border-width: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(179, 88, 88, 0.926);
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+.Season-Sale:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 45px rgb(51, 42, 30);
+}
+.endSale{
+ width:70%;
+ margin-left:20rem;
+}
+#kids-wear{
+    transition: all 0.3s ease-in-out;
+}
+#kids-wear:hover{
+transform:scale(1.03);
+box-shadow: 0 0 45px rgb(51, 53, 51);
+
+}
+#trousers{
+    transition: all 0.3s ease-in-out;
+}
+#trousers:hover{
+transform:scale(1.03);
+box-shadow: 0 0 45px rgb(51, 53, 51);
+
+}
+#sunglasses{
+    transition: all 0.3s ease-in-out;
+}
+#sunglasses:hover{
+transform:scale(1.03);
+box-shadow: 0 0 45px rgb(51, 53, 51);
+
+}
+#t-shirt{
+    transition: all 0.65s ease-in-out;
+}
+#t-shirt:hover{
+transform:scale(1.05);
+box-shadow: 0 0 45px rgb(51, 53, 51);
+
+}
+#women-tops{
+    transition: all 0.65s ease-in-out;
+}
+#women-tops:hover{
+transform:scale(1.05);
+box-shadow: 0 0 45px rgb(51, 53, 51);
+
+}
+.Exclusive{
+    font-size: 3.5rem;
+    color: #333;
+    margin-top:2rem;
+    /* margin-right: 2rem ; */
+    border-width: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(179, 88, 88, 0.926);
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+
+}
+.Exclusive:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 45px rgb(51, 42, 30); /* Increase box-shadow size on hover */
+}
+.endExclusive{
+    width:70%;
+ margin-left:20rem;
+}
+
+
+
